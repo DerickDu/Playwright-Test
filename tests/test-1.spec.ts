@@ -5,10 +5,10 @@ test('video post page', async ({ page }) => {
   await page.goto('https://testmonbyh.wewecall.com:6443/hcc-base/login');
   await page.getByRole('tab', { name: '密码登录' }).click();
   await page.getByPlaceholder('邮箱', { exact: true }).click();
-  await page.getByPlaceholder('邮箱', { exact: true }).fill('nmg@myhexin.com');
+  await page.getByPlaceholder('邮箱', { exact: true }).fill('');
   await page.getByPlaceholder('密码', { exact: true }).click();
   await page.getByPlaceholder('密码', { exact: true }).click();
-  await page.getByPlaceholder('密码', { exact: true }).fill('123456abcd');
+  await page.getByPlaceholder('密码', { exact: true }).fill('');
   await page.getByRole('button', { name: '立即登录' }).click();
   await page.getByText('内容列表').click();
   await page.getByRole('tab', { name: '文章' }).click();
